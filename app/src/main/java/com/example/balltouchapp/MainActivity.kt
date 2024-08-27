@@ -22,7 +22,10 @@ class MainActivity : AppCompatActivity() {
 
     // 1) viewを継承したクラス
     class BallView(context: Context?) : View(context) {
-       
+        override fun onDraw(canvas: Canvas) {
+            super.onDraw(canvas)
+            canvas.drawColor(Color.RED)
+        }
     }
 
 }
